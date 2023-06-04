@@ -8,8 +8,6 @@ import re
 res = requests.get('https://news.ycombinator.com/news')
 soup = BeautifulSoup(res.text, 'html.parser')
 
-# /html/body/center/table/tbody/tr[3]/td/table/tbody/tr[1]/td[3]/span/a
-
 
 def get_title(num):
     # /html/body/center/table/tbody/tr[3]/td/table/tbody/tr[1]/td[3]/span/a
